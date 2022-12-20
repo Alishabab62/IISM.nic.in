@@ -4,7 +4,7 @@
  
  @media only screen and (max-width: 1000px) {
     header .header-logo{
-        width: 30%;
+        width: 50%;
     }
     header{
         height: 20vh;
@@ -22,18 +22,21 @@
     header{
         height: 20vh;
     }
+    
  }
  
  @media only screen and (max-width: 754px) {
    .navigation-bar .nav-tab{
        margin-top: 10px;
        flex-direction: column;
-       text-align: center;
-       padding-left: 15%;
+       margin: auto;
        display: none;
     }
-   .navigation-bar .menu-bar{
+   .navigation-bar .nav-bar{
     display: block;
+   }
+   .navigation-bar{
+    padding-bottom: 20px;
    }
   }
 
