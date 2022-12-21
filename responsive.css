@@ -22,21 +22,36 @@
     header{
         height: 20vh;
     }
-    
+    .body-content .menu-bar{
+        top: 165px;
+    }
  }
  
  @media only screen and (max-width: 754px) {
    .navigation-bar .nav-tab{
        margin-top: 10px;
-       flex-direction: column;
+       flex-direction: row;
        margin: auto;
        display: none;
     }
-   .navigation-bar .nav-bar{
+    .navigation-bar{
+    padding: 20px 0px 20px 0px;
+    display: inline-block; 
+   }
+   .copyright-container{
+    justify-content: center;
+   }
+   .copyright-container .copy-right{
+    margin: 10px 0px 0px 0xp;
+   }
+   .body-content .fa-bars{
+    display: none;
+   }
+   .navigation-bar .nav-bar i{
     display: block;
    }
-   .navigation-bar{
-    padding-bottom: 20px;
+   .navigation-bar .nav-bar h6{
+    display: block;
    }
   }
 
