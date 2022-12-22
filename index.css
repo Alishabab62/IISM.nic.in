@@ -70,7 +70,7 @@ margin: 0px 0px 0px 10px;
 }
 .navigation-bar .nav-tab .nav {
   margin: 0px 0px 0px 19px;
-  padding: 20px 15px 20px 15px;
+  padding: 20px 0px 20px 0px;
 }
 
 .navigation-bar .nav-tab{
@@ -148,20 +148,24 @@ margin: 0px 0px 0px 10px;
 
 
 
-/* dropdown */
+/* sub-tab */
 
 .sub-menu-container{
   display: flex;
   margin-left: 50px;
+  position: absolute;
+ 
 }
 .sub-menu-container ul li{
   background-color: #1b3058;
   padding: 10px;
   list-style-type: none;
+  width:375px;
 }
 .sub-menu-container .sub-menu{
   display: none;
   z-index: 100;
+ 
 }
 .sub-menu-container .courses{
   margin-left: 120px;
@@ -178,6 +182,68 @@ margin: 0px 0px 0px 10px;
 }
 
 
+              /* website-main-container */
+
+.website-main-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+          /* .content-container */
+
+.website-main-container .content-container{
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  margin-top: 8%;
+  font-family: 'Libre Baskerville', serif;
+}
+.website-main-container .content-container > *{
+  padding: 20px;
+}
+.website-main-container .content-container h1{
+  font-size: 1.7em;
+  color: #23427f;
+}
+.website-main-container .content-container h2{
+  font-size: 1.4em;
+  color: #1b3058;
+}
+.website-main-container .content-container h4{
+  font-size: 1.1em;
+  color: #1b3058;
+}
+
+                /* .announcement-container */
+
+
+
+.website-main-container .announcement-container{
+  width: 25%;
+  height: 100%;
+  background-color:white;
+  border: 1px solid #23427f;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 500px;
+  font-family: 'Libre Baskerville', serif;
+  
+}
+.announcement-container .announcement{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.announcement-container .announcement h2{
+  color: #ffcb00;
+  font-size: 1.2em;
+}
+.announcement-container .announcement span{
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+}
 
 
 
@@ -206,7 +272,7 @@ footer .container a:hover{
 }
 footer .first-container{
   margin: 30px 0px 30px 0px;
-  min-width: 200px;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -236,5 +302,126 @@ footer .first-container iframe{
  .copyright-container .copy-right{
   color: white;
   margin: 0px 20px 0px 20px;
+}
+
+
+
+
+/* responsive */
+
+
+@media only screen and (max-width: 1400px) {
+   
+}
+
+@media only screen and (max-width: 1000px) {
+   header .header-logo{
+       width: 50%;
+   }
+   header{
+       height: 20vh;
+   }
+   
+}
+
+@media only screen and (max-width: 820px) {
+  header .right-header{
+       display: none;
+   }
+   header .header-logo{
+       width: 50%;
+   }
+   header{
+       height: 20vh;
+   }
+   .body-content .menu-bar{
+       top: 165px;
+   }
+   section.website-main-container .content-container{
+    width: 60%;
+  }
+ section .website-main-container .announcement-container{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-bar .nav-tab{
+      margin-top: 10px;
+      flex-direction: row;
+      margin: auto;
+      display: none;
+   }
+   .navigation-bar{
+   padding: 20px 0px 20px 0px;
+   display: inline-block; 
+  }
+  .copyright-container{
+   justify-content: center;
+  }
+  .copyright-container .copy-right{
+   margin: 10px 0px 0px 0xp;
+  }
+  .body-content .fa-bars{
+   display: none;
+  }
+  .navigation-bar .nav-bar i{
+   display: block;
+  }
+  .navigation-bar .nav-bar h6{
+   display: block;
+  }
+  section.website-main-container .content-container{
+    width: 60%;
+  }
+ section .website-main-container .announcement-container{
+    width: 100%;
+  }
+ }
+
+
+@media only screen and (max-width: 650px) {
+  section .website-main-container{
+    flex-direction: column;
+  }
+  /* section .website-main-container .announcement-container{
+    display: none;
+  }    */
+  section .website-main-container .content-container{
+    width: 100%;
+  }
+  .sub-menu-container .about-us{
+    margin-left: -50px;
+  }
+  .sub-menu-container .courses {
+    margin-left: -50px;
+  }
+  .sub-menu-container .admission-procedure{
+    margin-left: -50px;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  header .header-logo{
+       width: 100%;
+   }
+   
+}
+
+@media only screen and (max-width: 450px) {
+ 
+}
+
+@media only screen and (max-width: 390px) {
+   
+}
+
+@media only screen and (max-width: 375px) {
+   .sub-menu-container ul li{
+    width: 300px;
+   }
 }
 
